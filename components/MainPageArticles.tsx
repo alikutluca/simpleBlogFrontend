@@ -1,10 +1,13 @@
+
+
 import Link from "next/link";
+import articlesArray from "@/public/public";
 
 function MainPageArticles() {
   return (
     <div className="grid sm:flex flex-row mt-3 gap-8 justify-between">
       <Link href="/posts" className="basis-2/3">
-        <img src="/war_1.jpg" className="" />
+        <img src={articlesArray[0].url} className="" alt="asd" />
       </Link>
       <div className="basis-1/3 flex flex-col justify-between">
         <div className="basis-1/8 flex justify-between">

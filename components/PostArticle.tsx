@@ -1,18 +1,25 @@
+import articlesArray from "@/public/public";
+
 function PostArticle() {
   return (
     <div className="flex flex-col gap-5 mb-10">
-      <img src="/war_1.jpg" className="max-h-md" alt="" />
+      <img src={articlesArray[0].url} alt="" className="max-h-64" />
+
       <div>
-        <h1 className="font-bold font-seif tracking-wide capitalize text-[4vw] mb-[3vw]">
-          `&ldquo;`The Digital Revolution: How Technology Transformed the
-          World`&ldquo;`
+        <h1 className="font-bold font-seif tracking-wide capitalize text-lg md:text-xl lg:text-3xl  mb-[3vw]">
+          {/* &ldquo;The Digital Revolution: How Technology Transformed the
+          World&ldquo; */}
+          {articlesArray[0].title}
         </h1>
 
-        <h3 className="text-[1.5vw] font-bold">by Tarih</h3>
-        <h3 className="text-[1.25vw] text-gray-500">May 16,2023</h3>
+        <h3 className="text-sm md:text-base lg:text-lg font-bold">by Tarih</h3>
+        <h3 className="text-xs md:text-sm lg:text-base text-gray-500">
+          May 16,2023
+        </h3>
       </div>
-      <article className="font-mono text-[3vw] text-gray-700">
-        In this blog post, we embark on a captivating journey through the
+      <article className="font-mono text-base md:text-lg lg:text-2xl text-gray-700">
+        {articlesArray[0].article}
+        {/* In this blog post, we embark on a captivating journey through the
         digital revolution that has reshaped our world. We delve into the
         transformative power of technology, exploring its profound impact on
         various aspects of our lives. Beginning with a brief introduction, we
@@ -32,7 +39,7 @@ function PostArticle() {
         and its disruptive influence on traditional retail models. We examine
         how platforms like Amazon and Alibaba have revolutionized shopping
         experiences and transformed the global economy. Additionally, we explore
-        the digital revolution`&apos;`s influence on entertainment and media
+        the digital revolution&apos;s influence on entertainment and media
         consumption. From the rise of streaming services like Netflix and
         Spotify to the democratization of content creation through platforms
         like YouTube, we uncover the profound changes in how we consume and
@@ -46,12 +53,12 @@ function PostArticle() {
         revolution. We touch upon issues like data privacy, cybersecurity, and
         the digital divide, emphasizing the need for responsible and ethical use
         of technology. By the end of this blog post, readers will gain a
-        comprehensive understanding of the digital revolution`&apos;` immense
+        comprehensive understanding of the digital revolution&apos; immense
         influence on our lives, from communication and commerce to entertainment
         and beyond. They will appreciate the transformative power of technology
         and its ongoing impact on shaping the world we live in today. Remember
         to adapt and tailor this synopsis according to the desired length and
-        focus of your blog post.
+        focus of your blog post. */}
       </article>
     </div>
   );
