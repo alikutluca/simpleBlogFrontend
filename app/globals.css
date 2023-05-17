@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.font-wotfard-400 {
-  font-family: "Wotfard", sans-serif;
-  font-weight: 400;
-}
